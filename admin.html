@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSON Award Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ASSON Award Results</h1>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        const votes = JSON.parse(localStorage.getItem('votes'));
+        const resultsDiv = document.getElementById('results');
+
+        if (votes) {
+            for (const [category, vote] of Object.entries(votes)) {
+                const resultElement = document.createElement('p');
+                resultElement.textContent = `${category}: ${vote}`;
+                resultsDiv.appendChild(resultElement);
+            }
+        } else {
+            resultsDiv.textContent = 'No votes yet.';
+        }
+    </script>
+</body>
+</html>
