@@ -1,22 +1,25 @@
+
+
+
 const categories = {
-    "Fresher of the Year (F)": [
+    "FRESHER OF THE YEAR (F)": [
         "Bamgbese Deborah (Girl boss)",
         "Ololade Lateefah (Kirah)",
         "Cassia",
         "Tunmise"
     ],
-    "Fresher of the Year (M)": [
+    "FRESHER OF THE YEAR (M)": [
         "Adekoya Abdulmalik",
         "Binuyo Lekan Waliu",
         "Hameed",
-        "Idown joshua (josh)",
+        "Idown Joshua (josh)",
         "Osemeka Emmanuel",
         "Joseph Blessing (Yung J)",
-        "Salau quayum (Kaali)",
+        "Salau Quayum (Kaali)",
         "Immaculate",
         "Salami Daniel"
     ],
-    "Most Expensive": [
+    "MOST EXPENSIVE": [
         "Money Flow",
         "Paparoma",
         "Friday",
@@ -34,7 +37,7 @@ const categories = {
         "Oreolwa",
         "Adekoya Abdulmalik"
     ],
-    "Most Popular": [
+    "MOST POPULAR": [
         "Abdulmalik",
         "Lost boy",
         "Com.micolo",
@@ -44,7 +47,7 @@ const categories = {
         "Adebamowo Kehinde",
         "Bamgbose Deborah",
         "JOSH",
-        "kaali",
+        "Kaali",
         "Rhoda",
         "Madanwo",
         "Lollipop",
@@ -53,9 +56,216 @@ const categories = {
         "Statista",
         "Tife"
     ],
-    // Add other categories here
+    "MOST DRESS (M)": [
+        "Damisi",
+        "Abdulmalik",
+        "BigFlow",
+        "Jeph",
+        "Jazz",
+        "OYK",
+        "Demola",
+        "Paparoma",
+        "Taiwo Adebamowo",
+        "Immaculate"
+    ],
+    "MOST HANDSOME": [
+        "Adebamowo Taiwo",
+        "Abdulmalik",
+        "Barry Allen",
+        "Adeyemi Enoch",
+        "Akinnawo Ayomide",
+        "Osemeka Emmanuel",
+        "OLA",
+        "Sahkay",
+        "Apex",
+        "Wax",
+        "Damisi",
+        "Dbase",
+        "Excellent",
+        "Kaali",
+        "Luwa Jiggy",
+        "Tboy"
+    ],
+    "MOST BEAUTIFUL": [
+        "Tinuola",
+        "Fridaus",
+        "Adetoun",
+        "Kirah",
+        "Chisom",
+        "Mimi",
+        "Oreoluwa",
+        "Zainab",
+        "Vivian"
+    ],
+    "MOST FASHIONABLE (M)": [
+        "Abdulmalik",
+        "Jazz",
+        "Aiyepe Emmanuel",
+        "Joba Adewunmi (JB)",
+        "Justin",
+        "Bluuu",
+        "Osemeka Emmanuel",
+        "Vindy",
+        "Demola",
+        "Signs"
+    ],
+    "MOST FASHIONABLE (F)": [
+        "Balogun Latifat",
+        "Bamgbose Deborah",
+        "Blessing Okiki",
+        "Chisom",
+        "Rhoda",
+        "Olushile Oreoluwa",
+        "Kirah"
+    ],
+    "FACE OF ASSON": [
+        "Abdulmalik",
+        "Kirah",
+        "Rhoda",
+        "Kaali",
+        "Mariana",
+        "Com. Micolo",
+        "Raheem",
+        "Vivian"
+    ],
+    "PHOTOGRAPHER OF THE YEAR": [
+        "Akintonde Shorefunmi",
+        "Afolabi Oreoluwa",
+        "Joba Adewunmi",
+        "Feranmi"
+    ],
+    "ATHLETE OF THE YEAR": [
+        "Dammie Niguez",
+        "Dikanna",
+        "Feranmi",
+        "Immaculate",
+        "Jude Edobor",
+        "Semilore",
+        "TMK",
+        "Muiz",
+        "Lollipop",
+        "Raheem"
+    ],
+    "MOST SOCIAL (F)": [
+        "Mariana",
+        "Fridaus",
+        "Rhoda",
+        "Okiki",
+        "Kirah",
+        "Pelumi",
+        "Lolade"
+    ],
+    "MOST SOCIAL (M)": [
+        "Biggie",
+        "Adebamowo Kehinde",
+        "Madanwo",
+        "Muiz",
+        "Demola",
+        "Oreoluwa",
+        "DJ Sazzy",
+        "Raheem",
+        "Jefferson",
+        "Jeph",
+        "Wax",
+        "Justin"
+    ],
+    "MOST DRESS (F)": [
+        "Amaka",
+        "Apeke",
+        "Girl boss",
+        "Okiki",
+        "Blessing",
+        "Fridaus",
+        "Rhoda",
+        "Promise",
+        "Lizbeth",
+        "Olushile Oreoluwa"
+    ],
+    "PERSONALITY OF THE YEAR (F)": [
+        "Lawal Fridaus",
+        "Rhoda",
+        "Latifat",
+        "Zainab",
+        "Bamgbose Deborah",
+        "Vivian"
+    ],
+    "PERSONALITY OF THE YEAR (M)": [
+        "Fahd",
+        "Gbadamosi Maleek",
+        "Iyanu",
+        "Akeredolu Damilare",
+        "Hamid",
+        "Lost Boy",
+        "Ayomide",
+        "Tofunmi",
+        "JOSH"
+    ],
+    "BIG, BOLD AND BEAUTIFUL": [
+        "Adetokun Adetoun",
+        "Amaka",
+        "Fridaus",
+        "Mimi",
+        "Rhoda",
+        "Chisom",
+        "Promise",
+        "Tinuola",
+        "Zainab"
+    ],
+    "ARTIST OF THE YEAR": [
+        "Fridaus",
+        "Rayne",
+        "Swaggzola",
+        "Tifeh",
+        "Timzy"
+    ],
+    "BEST CONTENT CREATOR OF THE YEAR": [
+        "Adebakin Tolulope",
+        "Bamigbose Deborah",
+        "Coco boi",
+        "Okiki",
+        "Paparoma",
+        "Fridaus",
+        "Wax",
+        "Joba Adewunmi (JB)"
+    ],
+    "DISTINGUISHED ALUMNI AWARD": [
+        "Adigun Joshua (Mr Joshua)",
+        "Liasu Oluwatimilehin (Mr Timi)"
+    ],
+    "ENTREPRENEUR OF THE YEAR": [
+        "Dikanna",
+        "Sunmi",
+        "Godwithus",
+        "Kirah"
+    ],
+    "SPORTMANSHIP OF THE YEAR": [
+        "Feranmi",
+        "Dammie Niguez",
+        "TMK",
+        "Opizzy",
+        "Raheem",
+        "Hekay",
+        "Jude Edobor",
+        "Lollipop"
+    ],
+    "MOST SOPHISTICATED OF THE YEAR": [
+        "Okonji Joshua",
+        "Deeone",
+        "Harmid",
+        "JOSH",
+        "Immaculate",
+        "Cassia",
+        "Abdulmalik"
+    ],
+    "ENTERTAINMENT ICON OF THE YEAR": [
+        "DJ Sazzy",
+        "Fiyinfoluwa",
+        "Joseph Blessing",
+        "Com.Micolo",
+        "Orezy",
+        "Sultan"
+    ]
 };
-
 function generateVotingForms() {
     const votingSection = document.getElementById('voting-section');
     votingSection.innerHTML = '';
@@ -116,3 +326,6 @@ function submitVote() {
 }
 
 window.onload = checkIfVoted;
+
+
+
