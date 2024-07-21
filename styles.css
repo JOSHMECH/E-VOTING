@@ -1,5 +1,5 @@
 body {
-    background-image: url('background.jpg');
+    background-image: url('images/ASSON.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -8,12 +8,17 @@ body {
 }
 
 .header-logo {
-    width: 50px;
-    height: 50px;
+    width: 100px; /* Increased size */
+    height: 50px; /* Increased size */
     position: absolute;
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.75rem; /* Adjusted for larger logo */
 }
 
 .card {
@@ -31,6 +36,54 @@ header a.btn {
     top: 15px;
     right: 20px;
 }
+
+/* Make header responsive */
+@media (max-width: 576px) {
+    .header-logo {
+        width: 30px; /* Adjusted for smaller screens */
+        height: 15px; /* Adjusted for smaller screens */
+        left: 10px;
+    }
+
+    .header-title {
+        font-size: 0.8rem; /* Adjusted font size for smaller screens */
+    }
+
+    header a.btn {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-logo {
+        width: 35px; /* Adjusted for medium screens */
+        height: 17px; /* Adjusted for medium screens */
+        left: 15px;
+    }
+
+    .header-title {
+        font-size: 1rem; /* Adjusted font size for medium screens */
+    }
+
+    header a.btn {
+        right: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-logo {
+        width: 100px; /* Larger size for larger screens */
+        height: 50px; /* Larger size for larger screens */
+        left: 20px;
+    }
+
+    .header-title {
+        font-size: 1.75rem; /* Adjusted font size for larger screens */
+    }
+}
+
 
 #main-content {
     background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
