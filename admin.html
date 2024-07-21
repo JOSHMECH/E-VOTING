@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASSON Award Results</title>
+    <title>Admin - ASSON Awards</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>ASSON Award Results</h1>
-        <div id="results"></div>
+    <header class="bg-success text-white text-center py-4 position-relative">
+        <img src="logo.png" alt="Logo" class="header-logo">
+        <h1>Admin - ASSON Awards</h1>
+    </header>
+
+    <div class="container my-5" id="main-content">
+        <div id="login-form">
+            <h2>Admin Login</h2>
+            <input type="password" id="password" class="form-control mb-3" placeholder="Enter password">
+            <button class="btn btn-success btn-block" onclick="login()">Login</button>
+        </div>
+
+        <div id="results" class="d-none">
+            <!-- Results will be dynamically displayed here -->
+        </div>
+
+        <button id="clear-votes" class="btn btn-danger btn-block mt-3 d-none" onclick="clearVotes()">Clear Votes</button>
     </div>
 
-    <script>
-        const votes = JSON.parse(localStorage.getItem('votes'));
-        const resultsDiv = document.getElementById('results');
-
-        if (votes) {
-            for (const [category, vote] of Object.entries(votes)) {
-                const resultElement = document.createElement('p');
-                resultElement.textContent = `${category}: ${vote}`;
-                resultsDiv.appendChild(resultElement);
-            }
-        } else {
-            resultsDiv.textContent = 'No votes yet.';
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="admin.js"></script>
 </body>
 </html>

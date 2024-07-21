@@ -4,35 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASSON Award Nomination</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <header class="bg-success text-white text-center py-4 position-relative">
+        <img src="logo.png" alt="Logo" class="header-logo">
         <h1>ASSON Award Nomination</h1>
+        <a href="admin.html" class="btn btn-outline-light mt-3 position-absolute" style="right: 20px; top: 50%; transform: translateY(-50%);">Admin Page</a>
+    </header>
 
-        <div class="category">
-            <h2>Fresher of the Year (F)</h2>
-            <form id="fresher-f">
-                <label><input type="radio" name="fresher-f" value="Bamgbese Deborah"> Bamgbese Deborah (Girl boss)</label><br>
-                <label><input type="radio" name="fresher-f" value="Ololade Lateefah"> Ololade Lateefah (Kirah)</label><br>
-                <label><input type="radio" name="fresher-f" value="Cassia"> Cassia</label><br>
-                <label><input type="radio" name="fresher-f" value="Tunmise"> Tunmise</label><br>
-            </form>
+    <div class="container my-5" id="main-content">
+        <div id="voting-section">
+            <!-- Voting forms will be dynamically added here -->
         </div>
 
-        <div class="category">
-            <h2>Fresher of the Year (M)</h2>
-            <form id="fresher-m">
-                <label><input type="radio" name="fresher-m" value="Adekoya Abdulmalik"> Adekoya Abdulmalik</label><br>
-                <!-- Repeat for other nominees... -->
-            </form>
+        <div id="already-voted" class="d-none text-center mt-4">
+            <p>You have already voted. Thank you!</p>
         </div>
 
-        <!-- Repeat for other categories... -->
-
-        <button onclick="submitVote()">Submit Vote</button>
+        <button class="btn btn-success btn-block mt-3" onclick="submitVote()">Submit Vote</button>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
